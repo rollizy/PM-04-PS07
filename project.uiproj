@@ -1,0 +1,6 @@
+{
+  "Name": "PM-04-PS07",
+  "ProjectType": "Process",
+  "Description": "Your team is responsible for developing a bot that automates the fraud detection process for the \"Rapid Transfer\" system. The bot will:",
+  "MainFile": "Main.xaml"
+}
