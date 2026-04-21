@@ -92,12 +92,16 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Config" sap:VirtualizedContainerService.HintSize="1127,1467" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Config" sap:VirtualizedContainerService.HintSize="1484,1467" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="x:Double" Default="[10000]" Name="dblAmountThresholdLocal" />
       <Variable x:TypeArguments="x:String" Default="Data\Templates\Transaction_Report_Template.pdf" Name="strTemplatePathLocal" />
-      <Variable x:TypeArguments="x:String" Default="Data\Output\Reports" Name="strOutputFolderLocal" />
+      <Variable x:TypeArguments="x:String" Name="strOutputFolderLocal">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Data\Output\Reports</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Default="Data\Input\Suspicious_Accounts.csv" Name="strSuspiciousPathLocal" />
       <Variable x:TypeArguments="x:String" Default="Data\Input\Daily_Transactions.xlsx" Name="strTransactionsPathLocal" />
     </Sequence.Variables>
